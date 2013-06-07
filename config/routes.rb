@@ -1,4 +1,46 @@
 RlnWebServices::Application.routes.draw do
+  resources :orderable_concepts
+
+
+  resources :client_org_orderables
+
+
+  resources :orderable_specimen
+
+
+  resources :partner_org_components
+
+
+  resources :standard_components
+
+
+  resources :coll_requirements
+
+
+  resources :assays
+
+
+  resources :orderables
+
+
+  resources :organizations
+
+
+  resources :data_types
+
+
+  resources :org_connections
+
+
+  resources :track_order_changes
+
+
+  resources :orderable_assays
+
+
+  resources :track_assay_changes
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

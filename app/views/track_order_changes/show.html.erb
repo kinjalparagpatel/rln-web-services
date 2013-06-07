@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Orig track order change:</b>
+  <%= @track_order_change.orig_track_order_change_id %>
+</p>
+
+<p>
+  <b>Client org:</b>
+  <%= @track_order_change.client_org_id %>
+</p>
+
+<p>
+  <b>Client facility identifier:</b>
+  <%= @track_order_change.client_facility_identifier %>
+</p>
+
+<p>
+  <b>Orderable:</b>
+  <%= @track_order_change.orderable_id %>
+</p>
+
+<p>
+  <b>Change type cd:</b>
+  <%= @track_order_change.change_type_cd %>
+</p>
+
+<p>
+  <b>Active ind:</b>
+  <%= @track_order_change.active_ind %>
+</p>
+
+<p>
+  <b>Begin at:</b>
+  <%= @track_order_change.begin_at %>
+</p>
+
+<p>
+  <b>End at:</b>
+  <%= @track_order_change.end_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_track_order_change_path(@track_order_change) %> |
+<%= link_to 'Back', track_order_changes_path %>

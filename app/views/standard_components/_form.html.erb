@@ -1,0 +1,45 @@
+<%= form_for(@standard_component) do |f| %>
+  <% if @standard_component.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@standard_component.errors.count, "error") %> prohibited this standard_component from being saved:</h2>
+
+      <ul>
+      <% @standard_component.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :orig_standard_component_id %><br />
+    <%= f.number_field :orig_standard_component_id %>
+  </div>
+  <div class="field">
+    <%= f.label :component_type_cd %><br />
+    <%= f.number_field :component_type_cd %>
+  </div>
+  <div class="field">
+    <%= f.label :display %><br />
+    <%= f.text_field :display %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :active_ind %><br />
+    <%= f.number_field :active_ind %>
+  </div>
+  <div class="field">
+    <%= f.label :begin_at %><br />
+    <%= f.datetime_select :begin_at %>
+  </div>
+  <div class="field">
+    <%= f.label :end_at %><br />
+    <%= f.datetime_select :end_at %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

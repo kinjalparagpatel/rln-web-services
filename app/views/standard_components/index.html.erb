@@ -1,0 +1,35 @@
+<h1>Listing standard_components</h1>
+
+<table>
+  <tr>
+    <th>Orig standard component</th>
+    <th>Component type cd</th>
+    <th>Display</th>
+    <th>Description</th>
+    <th>Active ind</th>
+    <th>Begin at</th>
+    <th>End at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @standard_components.each do |standard_component| %>
+  <tr>
+    <td><%= standard_component.orig_standard_component_id %></td>
+    <td><%= standard_component.component_type_cd %></td>
+    <td><%= standard_component.display %></td>
+    <td><%= standard_component.description %></td>
+    <td><%= standard_component.active_ind %></td>
+    <td><%= standard_component.begin_at %></td>
+    <td><%= standard_component.end_at %></td>
+    <td><%= link_to 'Show', standard_component %></td>
+    <td><%= link_to 'Edit', edit_standard_component_path(standard_component) %></td>
+    <td><%= link_to 'Destroy', standard_component, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Standard component', new_standard_component_path %>

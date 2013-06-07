@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Orig orderable:</b>
+  <%= @orderable.orig_orderable_id %>
+</p>
+
+<p>
+  <b>Partner org:</b>
+  <%= @orderable.partner_org_id %>
+</p>
+
+<p>
+  <b>Alias:</b>
+  <%= @orderable.alias %>
+</p>
+
+<p>
+  <b>Display:</b>
+  <%= @orderable.display %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @orderable.description %>
+</p>
+
+<p>
+  <b>Active ind:</b>
+  <%= @orderable.active_ind %>
+</p>
+
+<p>
+  <b>Begin at:</b>
+  <%= @orderable.begin_at %>
+</p>
+
+<p>
+  <b>End at:</b>
+  <%= @orderable.end_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_orderable_path(@orderable) %> |
+<%= link_to 'Back', orderables_path %>

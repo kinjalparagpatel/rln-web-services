@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Orig coll requirements:</b>
+  <%= @coll_requirement.orig_coll_requirements_id %>
+</p>
+
+<p>
+  <b>Orderable specimen:</b>
+  <%= @coll_requirement.orderable_specimen_id %>
+</p>
+
+<p>
+  <b>Container component:</b>
+  <%= @coll_requirement.container_component_id %>
+</p>
+
+<p>
+  <b>Collection method component:</b>
+  <%= @coll_requirement.collection_method_component_id %>
+</p>
+
+<p>
+  <b>Transport temp component:</b>
+  <%= @coll_requirement.transport_temp_component_id %>
+</p>
+
+<p>
+  <b>Unit of measure component:</b>
+  <%= @coll_requirement.unit_of_measure_component_id %>
+</p>
+
+<p>
+  <b>Minimum volume:</b>
+  <%= @coll_requirement.minimum_volume %>
+</p>
+
+<p>
+  <b>Active ind:</b>
+  <%= @coll_requirement.active_ind %>
+</p>
+
+<p>
+  <b>Begin at:</b>
+  <%= @coll_requirement.begin_at %>
+</p>
+
+<p>
+  <b>End at:</b>
+  <%= @coll_requirement.end_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_coll_requirement_path(@coll_requirement) %> |
+<%= link_to 'Back', coll_requirements_path %>

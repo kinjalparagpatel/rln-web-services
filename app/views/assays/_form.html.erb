@@ -1,0 +1,49 @@
+<%= form_for(@assay) do |f| %>
+  <% if @assay.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@assay.errors.count, "error") %> prohibited this assay from being saved:</h2>
+
+      <ul>
+      <% @assay.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :orig_assay_id %><br />
+    <%= f.number_field :orig_assay_id %>
+  </div>
+  <div class="field">
+    <%= f.label :partner_org_id %><br />
+    <%= f.number_field :partner_org_id %>
+  </div>
+  <div class="field">
+    <%= f.label :alias %><br />
+    <%= f.number_field :alias %>
+  </div>
+  <div class="field">
+    <%= f.label :display %><br />
+    <%= f.text_field :display %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :active_ind %><br />
+    <%= f.number_field :active_ind %>
+  </div>
+  <div class="field">
+    <%= f.label :begin_at %><br />
+    <%= f.datetime_select :begin_at %>
+  </div>
+  <div class="field">
+    <%= f.label :end_at %><br />
+    <%= f.datetime_select :end_at %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

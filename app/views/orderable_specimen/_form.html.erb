@@ -1,0 +1,41 @@
+<%= form_for(@orderable_speciman) do |f| %>
+  <% if @orderable_speciman.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@orderable_speciman.errors.count, "error") %> prohibited this orderable_speciman from being saved:</h2>
+
+      <ul>
+      <% @orderable_speciman.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :orig_orderable_specimen_id %><br />
+    <%= f.number_field :orig_orderable_specimen_id %>
+  </div>
+  <div class="field">
+    <%= f.label :orderable_id %><br />
+    <%= f.number_field :orderable_id %>
+  </div>
+  <div class="field">
+    <%= f.label :specimen_component_id %><br />
+    <%= f.number_field :specimen_component_id %>
+  </div>
+  <div class="field">
+    <%= f.label :active_ind %><br />
+    <%= f.number_field :active_ind %>
+  </div>
+  <div class="field">
+    <%= f.label :begin_at %><br />
+    <%= f.datetime_select :begin_at %>
+  </div>
+  <div class="field">
+    <%= f.label :end_at %><br />
+    <%= f.datetime_select :end_at %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

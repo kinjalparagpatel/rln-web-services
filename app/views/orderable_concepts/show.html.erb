@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Orig orderable concept:</b>
+  <%= @orderable_concept.orig_orderable_concept_id %>
+</p>
+
+<p>
+  <b>Orderable:</b>
+  <%= @orderable_concept.orderable_id %>
+</p>
+
+<p>
+  <b>Coding system:</b>
+  <%= @orderable_concept.coding_system %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%= @orderable_concept.code %>
+</p>
+
+<p>
+  <b>Active ind:</b>
+  <%= @orderable_concept.active_ind %>
+</p>
+
+<p>
+  <b>Begin at:</b>
+  <%= @orderable_concept.begin_at %>
+</p>
+
+<p>
+  <b>End at:</b>
+  <%= @orderable_concept.end_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_orderable_concept_path(@orderable_concept) %> |
+<%= link_to 'Back', orderable_concepts_path %>

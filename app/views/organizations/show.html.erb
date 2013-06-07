@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Orig organization:</b>
+  <%= @organization.orig_organization_id %>
+</p>
+
+<p>
+  <b>Org type cd:</b>
+  <%= @organization.org_type_cd %>
+</p>
+
+<p>
+  <b>Org name:</b>
+  <%= @organization.org_name %>
+</p>
+
+<p>
+  <b>Org email:</b>
+  <%= @organization.org_email %>
+</p>
+
+<p>
+  <b>Active ind:</b>
+  <%= @organization.active_ind %>
+</p>
+
+<p>
+  <b>Begin at:</b>
+  <%= @organization.begin_at %>
+</p>
+
+<p>
+  <b>End at:</b>
+  <%= @organization.end_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_organization_path(@organization) %> |
+<%= link_to 'Back', organizations_path %>

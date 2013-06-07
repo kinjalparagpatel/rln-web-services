@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Orig standard component:</b>
+  <%= @standard_component.orig_standard_component_id %>
+</p>
+
+<p>
+  <b>Component type cd:</b>
+  <%= @standard_component.component_type_cd %>
+</p>
+
+<p>
+  <b>Display:</b>
+  <%= @standard_component.display %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @standard_component.description %>
+</p>
+
+<p>
+  <b>Active ind:</b>
+  <%= @standard_component.active_ind %>
+</p>
+
+<p>
+  <b>Begin at:</b>
+  <%= @standard_component.begin_at %>
+</p>
+
+<p>
+  <b>End at:</b>
+  <%= @standard_component.end_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_standard_component_path(@standard_component) %> |
+<%= link_to 'Back', standard_components_path %>

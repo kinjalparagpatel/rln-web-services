@@ -1,0 +1,37 @@
+<h1>Listing track_assay_changes</h1>
+
+<table>
+  <tr>
+    <th>Orig track assay change</th>
+    <th>Client org</th>
+    <th>Client facility identifier</th>
+    <th>Assay</th>
+    <th>Change type cd</th>
+    <th>Active ind</th>
+    <th>Begin at</th>
+    <th>End at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @track_assay_changes.each do |track_assay_change| %>
+  <tr>
+    <td><%= track_assay_change.orig_track_assay_change_id %></td>
+    <td><%= track_assay_change.client_org_id %></td>
+    <td><%= track_assay_change.client_facility_identifier %></td>
+    <td><%= track_assay_change.assay_id %></td>
+    <td><%= track_assay_change.change_type_cd %></td>
+    <td><%= track_assay_change.active_ind %></td>
+    <td><%= track_assay_change.begin_at %></td>
+    <td><%= track_assay_change.end_at %></td>
+    <td><%= link_to 'Show', track_assay_change %></td>
+    <td><%= link_to 'Edit', edit_track_assay_change_path(track_assay_change) %></td>
+    <td><%= link_to 'Destroy', track_assay_change, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Track assay change', new_track_assay_change_path %>

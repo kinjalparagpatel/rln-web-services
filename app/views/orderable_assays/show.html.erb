@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Orig orderable assay:</b>
+  <%= @orderable_assay.orig_orderable_assay_id %>
+</p>
+
+<p>
+  <b>Partner org:</b>
+  <%= @orderable_assay.partner_org_id %>
+</p>
+
+<p>
+  <b>Orderable:</b>
+  <%= @orderable_assay.orderable_id %>
+</p>
+
+<p>
+  <b>Assay:</b>
+  <%= @orderable_assay.assay_id %>
+</p>
+
+<p>
+  <b>Active ind:</b>
+  <%= @orderable_assay.active_ind %>
+</p>
+
+<p>
+  <b>Begin at:</b>
+  <%= @orderable_assay.begin_at %>
+</p>
+
+<p>
+  <b>End at:</b>
+  <%= @orderable_assay.end_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_orderable_assay_path(@orderable_assay) %> |
+<%= link_to 'Back', orderable_assays_path %>

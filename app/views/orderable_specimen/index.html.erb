@@ -1,0 +1,33 @@
+<h1>Listing orderable_specimen</h1>
+
+<table>
+  <tr>
+    <th>Orig orderable specimen</th>
+    <th>Orderable</th>
+    <th>Specimen component</th>
+    <th>Active ind</th>
+    <th>Begin at</th>
+    <th>End at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @orderable_specimen.each do |orderable_speciman| %>
+  <tr>
+    <td><%= orderable_speciman.orig_orderable_specimen_id %></td>
+    <td><%= orderable_speciman.orderable_id %></td>
+    <td><%= orderable_speciman.specimen_component_id %></td>
+    <td><%= orderable_speciman.active_ind %></td>
+    <td><%= orderable_speciman.begin_at %></td>
+    <td><%= orderable_speciman.end_at %></td>
+    <td><%= link_to 'Show', orderable_speciman %></td>
+    <td><%= link_to 'Edit', edit_orderable_speciman_path(orderable_speciman) %></td>
+    <td><%= link_to 'Destroy', orderable_speciman, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Orderable speciman', new_orderable_speciman_path %>

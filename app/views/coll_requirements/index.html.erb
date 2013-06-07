@@ -1,0 +1,41 @@
+<h1>Listing coll_requirements</h1>
+
+<table>
+  <tr>
+    <th>Orig coll requirements</th>
+    <th>Orderable specimen</th>
+    <th>Container component</th>
+    <th>Collection method component</th>
+    <th>Transport temp component</th>
+    <th>Unit of measure component</th>
+    <th>Minimum volume</th>
+    <th>Active ind</th>
+    <th>Begin at</th>
+    <th>End at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @coll_requirements.each do |coll_requirement| %>
+  <tr>
+    <td><%= coll_requirement.orig_coll_requirements_id %></td>
+    <td><%= coll_requirement.orderable_specimen_id %></td>
+    <td><%= coll_requirement.container_component_id %></td>
+    <td><%= coll_requirement.collection_method_component_id %></td>
+    <td><%= coll_requirement.transport_temp_component_id %></td>
+    <td><%= coll_requirement.unit_of_measure_component_id %></td>
+    <td><%= coll_requirement.minimum_volume %></td>
+    <td><%= coll_requirement.active_ind %></td>
+    <td><%= coll_requirement.begin_at %></td>
+    <td><%= coll_requirement.end_at %></td>
+    <td><%= link_to 'Show', coll_requirement %></td>
+    <td><%= link_to 'Edit', edit_coll_requirement_path(coll_requirement) %></td>
+    <td><%= link_to 'Destroy', coll_requirement, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Coll requirement', new_coll_requirement_path %>

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Orig client org orderable:</b>
+  <%= @client_org_orderable.orig_client_org_orderable_id %>
+</p>
+
+<p>
+  <b>Org connection:</b>
+  <%= @client_org_orderable.org_connection_id %>
+</p>
+
+<p>
+  <b>Client facility identifier:</b>
+  <%= @client_org_orderable.client_facility_identifier %>
+</p>
+
+<p>
+  <b>Orderable:</b>
+  <%= @client_org_orderable.orderable_id %>
+</p>
+
+<p>
+  <b>Active ind:</b>
+  <%= @client_org_orderable.active_ind %>
+</p>
+
+<p>
+  <b>Begin at:</b>
+  <%= @client_org_orderable.begin_at %>
+</p>
+
+<p>
+  <b>End at:</b>
+  <%= @client_org_orderable.end_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_client_org_orderable_path(@client_org_orderable) %> |
+<%= link_to 'Back', client_org_orderables_path %>

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Orig org connection:</b>
+  <%= @org_connection.orig_org_connection_id %>
+</p>
+
+<p>
+  <b>Partner org:</b>
+  <%= @org_connection.partner_org_id %>
+</p>
+
+<p>
+  <b>Client org:</b>
+  <%= @org_connection.client_org_id %>
+</p>
+
+<p>
+  <b>Active ind:</b>
+  <%= @org_connection.active_ind %>
+</p>
+
+<p>
+  <b>Begin at:</b>
+  <%= @org_connection.begin_at %>
+</p>
+
+<p>
+  <b>End at:</b>
+  <%= @org_connection.end_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_org_connection_path(@org_connection) %> |
+<%= link_to 'Back', org_connections_path %>

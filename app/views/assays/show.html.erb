@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Orig assay:</b>
+  <%= @assay.orig_assay_id %>
+</p>
+
+<p>
+  <b>Partner org:</b>
+  <%= @assay.partner_org_id %>
+</p>
+
+<p>
+  <b>Alias:</b>
+  <%= @assay.alias %>
+</p>
+
+<p>
+  <b>Display:</b>
+  <%= @assay.display %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @assay.description %>
+</p>
+
+<p>
+  <b>Active ind:</b>
+  <%= @assay.active_ind %>
+</p>
+
+<p>
+  <b>Begin at:</b>
+  <%= @assay.begin_at %>
+</p>
+
+<p>
+  <b>End at:</b>
+  <%= @assay.end_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_assay_path(@assay) %> |
+<%= link_to 'Back', assays_path %>

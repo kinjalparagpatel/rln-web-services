@@ -1,0 +1,35 @@
+<h1>Listing client_org_orderables</h1>
+
+<table>
+  <tr>
+    <th>Orig client org orderable</th>
+    <th>Org connection</th>
+    <th>Client facility identifier</th>
+    <th>Orderable</th>
+    <th>Active ind</th>
+    <th>Begin at</th>
+    <th>End at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @client_org_orderables.each do |client_org_orderable| %>
+  <tr>
+    <td><%= client_org_orderable.orig_client_org_orderable_id %></td>
+    <td><%= client_org_orderable.org_connection_id %></td>
+    <td><%= client_org_orderable.client_facility_identifier %></td>
+    <td><%= client_org_orderable.orderable_id %></td>
+    <td><%= client_org_orderable.active_ind %></td>
+    <td><%= client_org_orderable.begin_at %></td>
+    <td><%= client_org_orderable.end_at %></td>
+    <td><%= link_to 'Show', client_org_orderable %></td>
+    <td><%= link_to 'Edit', edit_client_org_orderable_path(client_org_orderable) %></td>
+    <td><%= link_to 'Destroy', client_org_orderable, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Client org orderable', new_client_org_orderable_path %>

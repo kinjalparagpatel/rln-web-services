@@ -1,0 +1,35 @@
+<h1>Listing organizations</h1>
+
+<table>
+  <tr>
+    <th>Orig organization</th>
+    <th>Org type cd</th>
+    <th>Org name</th>
+    <th>Org email</th>
+    <th>Active ind</th>
+    <th>Begin at</th>
+    <th>End at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @organizations.each do |organization| %>
+  <tr>
+    <td><%= organization.orig_organization_id %></td>
+    <td><%= organization.org_type_cd %></td>
+    <td><%= organization.org_name %></td>
+    <td><%= organization.org_email %></td>
+    <td><%= organization.active_ind %></td>
+    <td><%= organization.begin_at %></td>
+    <td><%= organization.end_at %></td>
+    <td><%= link_to 'Show', organization %></td>
+    <td><%= link_to 'Edit', edit_organization_path(organization) %></td>
+    <td><%= link_to 'Destroy', organization, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Organization', new_organization_path %>

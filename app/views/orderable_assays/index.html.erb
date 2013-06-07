@@ -1,0 +1,35 @@
+<h1>Listing orderable_assays</h1>
+
+<table>
+  <tr>
+    <th>Orig orderable assay</th>
+    <th>Partner org</th>
+    <th>Orderable</th>
+    <th>Assay</th>
+    <th>Active ind</th>
+    <th>Begin at</th>
+    <th>End at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @orderable_assays.each do |orderable_assay| %>
+  <tr>
+    <td><%= orderable_assay.orig_orderable_assay_id %></td>
+    <td><%= orderable_assay.partner_org_id %></td>
+    <td><%= orderable_assay.orderable_id %></td>
+    <td><%= orderable_assay.assay_id %></td>
+    <td><%= orderable_assay.active_ind %></td>
+    <td><%= orderable_assay.begin_at %></td>
+    <td><%= orderable_assay.end_at %></td>
+    <td><%= link_to 'Show', orderable_assay %></td>
+    <td><%= link_to 'Edit', edit_orderable_assay_path(orderable_assay) %></td>
+    <td><%= link_to 'Destroy', orderable_assay, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Orderable assay', new_orderable_assay_path %>

@@ -1,0 +1,37 @@
+<h1>Listing orderables</h1>
+
+<table>
+  <tr>
+    <th>Orig orderable</th>
+    <th>Partner org</th>
+    <th>Alias</th>
+    <th>Display</th>
+    <th>Description</th>
+    <th>Active ind</th>
+    <th>Begin at</th>
+    <th>End at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @orderables.each do |orderable| %>
+  <tr>
+    <td><%= orderable.orig_orderable_id %></td>
+    <td><%= orderable.partner_org_id %></td>
+    <td><%= orderable.alias %></td>
+    <td><%= orderable.display %></td>
+    <td><%= orderable.description %></td>
+    <td><%= orderable.active_ind %></td>
+    <td><%= orderable.begin_at %></td>
+    <td><%= orderable.end_at %></td>
+    <td><%= link_to 'Show', orderable %></td>
+    <td><%= link_to 'Edit', edit_orderable_path(orderable) %></td>
+    <td><%= link_to 'Destroy', orderable, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Orderable', new_orderable_path %>

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Orig orderable specimen:</b>
+  <%= @orderable_speciman.orig_orderable_specimen_id %>
+</p>
+
+<p>
+  <b>Orderable:</b>
+  <%= @orderable_speciman.orderable_id %>
+</p>
+
+<p>
+  <b>Specimen component:</b>
+  <%= @orderable_speciman.specimen_component_id %>
+</p>
+
+<p>
+  <b>Active ind:</b>
+  <%= @orderable_speciman.active_ind %>
+</p>
+
+<p>
+  <b>Begin at:</b>
+  <%= @orderable_speciman.begin_at %>
+</p>
+
+<p>
+  <b>End at:</b>
+  <%= @orderable_speciman.end_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_orderable_speciman_path(@orderable_speciman) %> |
+<%= link_to 'Back', orderable_specimen_path %>

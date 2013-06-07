@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Orig track assay change:</b>
+  <%= @track_assay_change.orig_track_assay_change_id %>
+</p>
+
+<p>
+  <b>Client org:</b>
+  <%= @track_assay_change.client_org_id %>
+</p>
+
+<p>
+  <b>Client facility identifier:</b>
+  <%= @track_assay_change.client_facility_identifier %>
+</p>
+
+<p>
+  <b>Assay:</b>
+  <%= @track_assay_change.assay_id %>
+</p>
+
+<p>
+  <b>Change type cd:</b>
+  <%= @track_assay_change.change_type_cd %>
+</p>
+
+<p>
+  <b>Active ind:</b>
+  <%= @track_assay_change.active_ind %>
+</p>
+
+<p>
+  <b>Begin at:</b>
+  <%= @track_assay_change.begin_at %>
+</p>
+
+<p>
+  <b>End at:</b>
+  <%= @track_assay_change.end_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_track_assay_change_path(@track_assay_change) %> |
+<%= link_to 'Back', track_assay_changes_path %>
